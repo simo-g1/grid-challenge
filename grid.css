@@ -1,0 +1,433 @@
+/* #region ========== v1 ==========  */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    counter-reset: div;
+}
+
+.grid {
+    background-color: #ddd;
+
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 80px auto;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 10fr;
+    gap: 15px;
+}
+
+.grid div {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #607D8B;
+}
+
+.grid div::after {
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+
+    counter-increment: div;
+    content: "Element " counter(div);
+} */
+
+/* #endregion ========== v1 ==========  */
+
+
+
+
+/* #region ========== v2 ==========  */
+
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.layout {
+    min-height: 100vh;
+
+    color: white;
+
+    display: grid;
+    grid-template-areas:
+        "head head head head head"
+        "cont cont cont cont aside "
+        "footer footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr) 1.5fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+header::before,
+section::before,
+aside::before,
+footer::before {
+    padding: 10px;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.layout header {
+    background-color: #03a9f4;
+    grid-area: head;
+}
+
+.layout header::before {
+    content: "Header";
+}
+
+.layout section {
+    background-color: #ff5722;
+    grid-area: cont;
+
+}
+
+.layout section::before {
+    content: "Section";
+}
+
+.layout aside {
+    background-color: #607d8b;
+    grid-area: aside;
+
+}
+
+.layout aside::before {
+    content: "Aside";
+}
+
+.layout footer {
+    background-color: #009688;
+    grid-area: footer;
+
+}
+
+.layout footer::before {
+    content: "Footer";
+} */
+
+
+/* #endregion ========== v2 ==========  */
+
+
+
+/* #region ========== v3 ==========  */
+
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.grid {
+    background-color: #ddd;
+    color: white;
+
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+}
+
+
+.grid div {
+    background-color: #403f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* #endregion ========== v3 ==========  */
+
+
+
+/* #region ========== v4 ========== */
+
+/* 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.grid {
+    color: white;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.grid div {
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid .one {
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+}
+
+.grid .two {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+}
+
+.grid .three {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+
+.grid .four {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.grid .five {
+    grid-column: 3 / 7;
+    grid-row: 3 / 6;
+}
+
+.grid .six {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.grid .seven {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+}
+
+.grid .eight {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+} */
+
+/* #endregion ========== v4 ========== */
+
+
+
+/* #region ========== v5 ========== */
+
+
+
+
+
+
+
+/* .grid {
+    background-color: #ddd;
+    color: white;
+
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    align-content: space-between;
+}
+
+.grid div {
+    background-color: #e91e63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* #endregion ========== v5 ========== */
+
+
+/* #region ========== v6 ========== */
+
+/* no need  */
+
+/* :root {
+    --text-color: black;
+    --text2-color: white;
+    --main-bg-color: white;
+    --main-2-bg-color: black;
+    --border-color: red;
+    --font-weight: bold;
+} */
+
+/* no need  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blueviolet;
+}
+
+.page {
+    background-color: #eee;
+
+    /* min-height: 100vh; */
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 10px;
+}
+
+.page div {
+    position: relative;
+
+    font-weight: bold;
+    padding: 20px;
+
+    /* display: grid;
+    gap: 5px;
+    align-content: start; */
+
+    border-bottom: 3px solid red;
+}
+
+.page div::after {
+    content: '"';
+    position: absolute;
+    right: 5px;
+    bottom: -17px;
+    font-size: 50px;
+    color: gray;
+    opacity: 0.5;
+    transform: rotate(15deg);
+}
+
+.description {
+    font-weight: normal;
+
+}
+
+.description,
+.title {
+    padding: 10px;
+    padding-left: 0;
+}
+
+
+.job {
+    color: gray;
+    font-weight: normal;
+}
+
+.osama,
+.ahmed,
+.ezz,
+.sayed,
+.eman,
+.ibrahim {
+    color: black;
+    background-color: white;
+}
+
+.mahmoud,
+.shady,
+.ibrahim-sayed {
+    background-color: black;
+    color: white;
+}
+
+.sayed,
+.ibrahim-sayed {
+    grid-row-end: 5;
+}
+
+.osama {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.ahmed {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.shady {
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+}
+
+.ibrahim {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.mahmoud {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.ezz {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+
+/* #endregion ========== v6 ========== */
